@@ -1,7 +1,7 @@
 /* Basic styling */
 body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 50; /* Remove default margin */
+  padding: 50; /* Remove default padding */
   font-family: sans-serif;
   height: 100%; /* Full height for body */
 }
@@ -10,14 +10,16 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Use full viewport height */
+  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+  width: 100%; /* Allow the container to use full width */
   background-image: url("../Images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding: 20px; /* Add some padding to the container */
+  background-size: cover; /* Make the background cover the full container */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 20px; /* Add padding */
+  box-sizing: border-box; /* Include padding in the container’s total width/height */
 }
 
 /* Header styling */
@@ -39,8 +41,8 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
   border-radius: 20px; /* Slightly smaller border-radius */
   box-sizing: border-box;
-  max-width: 90%; /* Ensure it doesn't overflow horizontally */
-  max-height: 80vh; /* Allow the content to fit vertically */
+  max-width: 99%; /* Ensure it doesn't overflow horizontally */
+  max-height: 90vh; /* Allow the content to fit vertically */
   overflow: auto; /* Ensure content fits within the element */
 }
 
@@ -50,7 +52,7 @@ h1 {
 }
 
 .invitation-text {
-  font-size: 1.5em;
+  font-size: 1em;
   margin-bottom: 30px;
 }
 
@@ -59,7 +61,7 @@ h1 {
 }
 
 .event-details p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 10px;
   font-weight: bold;
 }
