@@ -32,7 +32,7 @@ body {
 /* Content styling */
 .content {
   text-align: center;
-  padding: 250px;
+  padding: 350px;
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
   border-radius: 50px;
 }
