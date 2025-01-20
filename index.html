@@ -30,6 +30,14 @@
         <label for="guests">Number of Guests:</label>
         <input type="number" id="guests" name="guests" min="1" required>
 
+        <label for="menu">Menu Preference:</label>
+        <select id="menu" name="menu" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="normal">Normal</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+        </select>
+
         <label for="message">Message for the Couple:</label>
         <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
 
