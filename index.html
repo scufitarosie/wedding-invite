@@ -1,129 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel & Alexandra's Wedding</title>
-    <style>
-        /* General reset */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #fdf6e4;
-            color: #333;
-            text-align: center;
-        }
-
-        header {
-            background-color: #f7d9d9;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        header p {
-            margin: 5px 0 15px 0;
-            font-size: 1.2em;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .invite-details {
-            margin-bottom: 30px;
-            font-size: 1.2em;
-            line-height: 1.8em;
-        }
-
-        .rsvp-form {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border: 2px solid #ffb6b6;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .rsvp-form input, .rsvp-form textarea, .rsvp-form button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .rsvp-form button {
-            background-color: #f7d9d9;
-            color: #333;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Gabriel & Alexandra's Wedding</h1>
-        <p>July 19th, 2025</p>
-    </header>
-
-    <div class="content">
-        <div class="invite-details">
-            <p><strong>Religious Ceremony:</strong></p>
-            <p>Biserica "Adormirea Sfintei Ana" - Batiște</p>
-            <p>3:00 PM</p>
-
-            <p><strong>Party:</strong></p>
-            <p>TreeHouse - Cosoba</p>
-            <p>6:00 PM</p>
-        </div>
-
-        <div class="rsvp-form">
-            <h2>RSVP</h2>
-            <form id="rsvpForm">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <input type="number" id="guests" name="guests" placeholder="Number of Guests" required>
-                <textarea id="comments" name="comments" placeholder="Any Comments or Special Requests"></textarea>
-                <button type="submit">Submit RSVP</button>
-            </form>
-        </div>
+  <div class="container">
+    <div class="header">
+      <img src="images/header-theme.png" alt="Wedding Theme Header" class="header-image">
     </div>
+    <div class="content">
+      <h1>Gabriel & Alexandra</h1>
+      <p class="invitation-text">Join us on our special day!</p>
+      <div class="event-details">
+        <p><strong>Date:</strong> July 19th, 2025</p>
+        <p><strong>Religious Ceremony:</strong></p>
+        <p>Location: Biserica "Adormirea Sfintei Ana" - Batiște</p>
+        <p>Time: 3:00pm</p>
+        <p><strong>Party:</strong></p>
+        <p>Location: TreeHouse - Cosoba</p>
+        <p>Time: 6:00pm</p>
+      </div>
+      <form class="rsvp-form" action="[Your-Google-Script-URL]" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>We can't wait to celebrate with you!</p>
-    </footer>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
 
-    <script>
-        document.getElementById('rsvpForm').addEventListener('submit', async function(event) {
-            event.preventDefault();
+        <label for="message">Message for the Couple:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
 
-            const formData = new FormData(event.target);
-
-            const response = await fetch('YOUR_GOOGLE_SCRIPT_WEB_APP_URL', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                alert('We can't wait to see you there!');
-                event.target.reset();
-            } else {
-                alert('Oops! Something went wrong. Please try again.');
-            }
-        });
-    </script>
+        <button type="submit">RSVP</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
