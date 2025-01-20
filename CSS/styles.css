@@ -1,80 +1,93 @@
+/* Basic styling */
 body {
-  font-family: 'Arial', sans-serif;
-  background-image: url('../images/background.png');
-  background-size: cover;
   margin: 0;
   padding: 0;
-  color: #333;
+  font-family: sans-serif;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Header styling */
 .header {
+  width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .header-image {
-  max-width: 100%;
-  height: auto;
+  width: 50%;
+  max-width: 500px;
 }
 
-.content h1 {
+/* Content styling */
+.content {
   text-align: center;
-  font-size: 2.5em;
-  color: #f67e7d;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 .invitation-text {
-  text-align: center;
-  font-size: 1.2em;
-  margin: 10px 0;
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 
 .event-details {
-  font-size: 1.1em;
-  margin: 20px 0;
+  margin-bottom: 40px;
 }
 
+.event-details p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* RSVP form styling */
 .rsvp-form {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .rsvp-form label {
-  display: block;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .rsvp-form input,
+.rsvp-form select,
 .rsvp-form textarea {
-  width: 100%;
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 .rsvp-form button {
-  background-color: #f67e7d;
+  background-color: #4CAF50; /* Green button color */
   color: white;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
-  margin-top: 15px;
   cursor: pointer;
 }
 
 .rsvp-form button:hover {
-  background-color: #d96666;
+  background-color: #45A049; /* Darker green on hover */
 }
-
