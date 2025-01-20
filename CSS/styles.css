@@ -1,27 +1,30 @@
 /* Basic styling */
 body {
-  margin: 50;
-  padding: 50;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   font-family: sans-serif;
+  height: 100%; /* Full height for body */
 }
 
+/* Container styling */
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 10vh;
+  min-height: 100vh; /* Use full viewport height */
   background-image: url("../Images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add some padding to the container */
 }
 
 /* Header styling */
 .header {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Reduced margin */
 }
 
 .header-image {
@@ -32,10 +35,13 @@ body {
 /* Content styling */
 .content {
   text-align: center;
-  padding: 350px;
+  padding: 5%; /* Responsive padding */
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  border-radius: 50px;
+  border-radius: 20px; /* Slightly smaller border-radius */
   box-sizing: border-box;
+  max-width: 90%; /* Ensure it doesn't overflow horizontally */
+  max-height: 80vh; /* Allow the content to fit vertically */
+  overflow: auto; /* Ensure content fits within the element */
 }
 
 h1 {
@@ -63,7 +69,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 50%;
+  width: 100%;
+  max-width: 500px; /* Ensure the form doesn't get too wide */
   margin: 0 auto;
 }
 
