@@ -1,8 +1,24 @@
 body {
-  margin: 0; 
-  padding: 0; 
-  font-family: 'MonteCarlo';
-  height: 100%; 
+  margin: 50px; 
+  padding: 50px; 
+  font-family: 'Great Vibes', cursive;
+  height: 100%;
+  background-image: url("../Images/background4.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    background-image: url("../Images/background5.png"); 
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {
+  body {
+    background-image: url("../Images/background4.png"); 
+  }
 }
 
 .container {
@@ -10,10 +26,6 @@ body {
   flex-direction: column;
   min-height: 100vh; 
   width: 100%; 
-  background-image: url("../Images/background4.png");
-  background-size: cover; 
-  background-position: center center;
-  background-repeat: no-repeat; 
   justify-content: center; 
   align-items: center;
   padding: 20px; 
@@ -33,21 +45,23 @@ body {
 
 .content {
   text-align: center;
-  padding: 20px;  /* Reduced padding */
-  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 5% 150px; 
+  background-color: rgba(255, 255, 255, 0.5); 
   border-radius: 20px; 
   box-sizing: border-box;
-  width: 100%;
-  max-width: 600px; /* Keeps it from being too wide */
+  width: 100%;  
+  max-width: 100%; 
+  max-height: 90vh; 
+  overflow: auto; 
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 
 .invitation-text {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
@@ -58,4 +72,43 @@ h1 {
 }
 
 .event-details p {
-  font-s
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+}
+
+.rsvp-form label {
+  font-weight: bold;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.rsvp-form button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rsvp-form button:hover {
+  background-color: #45A049; 
+}
+
