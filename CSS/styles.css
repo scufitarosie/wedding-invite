@@ -1,6 +1,6 @@
 body {
-  margin: 50px;
-  padding: 5% 50px;
+  margin: 0;
+  padding: 0;
   font-family: 'Great Vibes', cursive;
   height: 100%;
 }
@@ -20,13 +20,30 @@ body {
   box-sizing: border-box;
 }
 
+/* Responsive Fixes */
 @media (max-width: 768px) {
   .container {
     background-image: url("../Images/background5.png");
-    background-size: contain;
+    background-size: cover; /* Change from contain to cover */
+    padding: 10px;
+  }
+
+  .content {
+    width: 95%;
+    padding: 5%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .header-image {
+    width: 80%;
   }
 }
 
+/* General Content Styling */
 .header {
   width: 100%;
   text-align: center;
@@ -40,7 +57,7 @@ body {
 
 .content {
   text-align: center;
-  padding: 5% 10%;
+  padding: 5%;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   box-sizing: border-box;
@@ -50,6 +67,7 @@ body {
   overflow: auto;
 }
 
+/* Adjust text sizes for mobile */
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
@@ -72,6 +90,7 @@ h1 {
   font-weight: bold;
 }
 
+/* Form Adjustments */
 .rsvp-form {
   display: flex;
   flex-direction: column;
@@ -85,54 +104,13 @@ h1 {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.rsvp-form label {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #333;
-  margin-bottom: 5px;
-}
+@media (max-width: 480px) {
+  .rsvp-form {
+    width: 90%;
+  }
 
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea {
-  padding: 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  width: 100%;
-  font-size: 1em;
-  background: #f9f9f9;
-  transition: all 0.3s ease-in-out;
-}
-
-.rsvp-form input:focus,
-.rsvp-form select:focus,
-.rsvp-form textarea:focus {
-  border-color: #4CAF50;
-  background: #fff;
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
-}
-
-.rsvp-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.rsvp-form button {
-  background: linear-gradient(135deg, #4CAF50, #45A049);
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.rsvp-form button:hover {
-  background: linear-gradient(135deg, #45A049, #3E8E41);
-  transform: scale(1.05);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  .rsvp-form button {
+    font-size: 1em;
+    padding: 12px;
+  }
 }
