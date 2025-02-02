@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Homemade+Apple&family=MonteCarlo&family=Sacramento&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: "Sacramento", serif;
   height: 100%;
   text-align: center;
   background-image: url("../Images/background5.png");
@@ -24,37 +24,24 @@ body {
   align-items: center;
   padding: 40px;
   box-sizing: border-box;
-  border: 10px solid #4CAF50; /* Green border */
-  position: relative;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border: 5px solid #4CAF50; /* Inner border for styling effect */
-  pointer-events: none;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
 }
 
 .invitation-text {
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .event-details {
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.5;
 }
 
@@ -64,7 +51,7 @@ h1 {
 }
 
 .contact-info {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 20px;
 }
 
@@ -76,23 +63,16 @@ h1 {
 
 .rsvp-section {
   margin-top: 30px;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 .rsvp-section a {
   display: block;
-  margin: 10px 0;
+  margin: 15px 0;
   color: #4CAF50;
   text-decoration: none;
-  font-size: 1.2em;
-}
-
-.rsvp-options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
+  font-size: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,30 +80,21 @@ h1 {
     width: 95vw;
     min-height: 95vh;
     padding: 20px;
-    border-width: 8px;
   }
 
-  .container::before {
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-width: 4px;
-  }
-  
   h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
   
   .invitation-text {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   
   .event-details {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   
   .contact-info {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
