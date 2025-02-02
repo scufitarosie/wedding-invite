@@ -3,8 +3,14 @@ body {
   padding: 0;
   font-family: 'Great Vibes', cursive;
   height: 100%;
-  width: 100%;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  text-align: center;
+  background-image: url("../Images/background5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -12,151 +18,79 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background-image: url("../Images/background4.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  position: relative; /* Ensures content stays within bounds */
-  overflow: hidden; /* Prevents overlay from exceeding background */
-}
-
-.content {
-  text-align: center;
-  padding: 5%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
-  box-sizing: border-box;
-  width: 90%;
-  max-width: 600px; /* Keeps it from stretching too much */
-  max-height: 80vh; /* Ensures overlay doesn’t exceed background */
-  overflow: auto;
-}
-
-/* Mobile Fixes */
-@media (max-width: 768px) {
-  .container {
-    background-image: url("../Images/background5.png");
-    background-size: contain; /* Keeps it proportional */
-    background-position: top center;
-    padding: 10px;
-  }
-
-  .content {
-    width: 95%;
-    max-width: 100%;
-    max-height: 75vh; /* Keeps overlay within background */
-  }
-}
-
-.header {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.header-image {
-  width: 50%;
-  max-width: 500px;
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .invitation-text {
-  font-size: 1em;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .event-details {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #000;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 .event-details p {
-  font-size: 1em;
-  margin-bottom: 10px;
+  margin: 5px 0;
   font-weight: bold;
 }
 
-.rsvp-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.rsvp-form label {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.rsvp-form input,
-.rsvp-form select,
-.rsvp-form textarea {
-  padding: 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  width: 100%;
-  font-size: 1em;
-  background: #f9f9f9;
-  transition: all 0.3s ease-in-out;
-}
-
-.rsvp-form input:focus,
-.rsvp-form select:focus,
-.rsvp-form textarea:focus {
-  border-color: #4CAF50;
-  background: #fff;
-  outline: none;
-  box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
-}
-
-.rsvp-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.rsvp-form button {
-  background: linear-gradient(135deg, #4CAF50, #45A049);
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.contact-info {
   font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.rsvp-form button:hover {
-  background: linear-gradient(135deg, #45A049, #3E8E41);
-  transform: scale(1.05);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+.rsvp-section {
+  margin-top: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
-@media (max-width: 480px) {
-  .rsvp-form {
-    width: 90%;
+.rsvp-section a {
+  display: block;
+  margin: 10px 0;
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 20px;
+    max-width: 90%;
   }
-
-  .rsvp-form button {
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  .invitation-text {
+    font-size: 1.3em;
+  }
+  
+  .event-details {
     font-size: 1em;
-    padding: 12px;
+  }
+  
+  .contact-info {
+    font-size: 1em;
   }
 }
