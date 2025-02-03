@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;
   height: 100vh;
   text-align: center;
-  background-image: url("background5.png");
+  background-image: url("background4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,17 +27,17 @@ body {
   align-items: center;
   padding: 40px;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6); 
   border-radius: 15px;
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  text-transform: uppercase;
   font-weight: bold;
-  font-family: 'Great Vibes', cursive;
-}
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-style: normal;}
 
 .invitation-text {
   font-size: 1.8em;
@@ -81,6 +83,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   body {
+    background-image: url("background5.png"); 
     background-size: cover;
     padding: 20px;
   }
