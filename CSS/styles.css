@@ -68,8 +68,8 @@ a {
 
 .event-details a {
   font-family: 'Indie Flower', cursive; 
-  color: #333; 
-  text-decoration: none;
+  color: blue; 
+  text-decoration: underline;
 }
 
 .contact-info {
