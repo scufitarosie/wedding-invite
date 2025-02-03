@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Homemade+Apple&family=MonteCarlo&family=Ms+Madi&family=Parisienne&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Parisienne";
+  font-family: 'Playfair Display', serif;
   height: 100%;
   text-align: center;
   background-image: url("../Images/background5.png");
@@ -31,6 +31,7 @@ h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'Great Vibes', cursive;
 }
 
 .invitation-text {
@@ -76,6 +77,10 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+
   .container {
     width: 95vw;
     min-height: 95vh;
