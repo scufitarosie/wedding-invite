@@ -8,7 +8,7 @@ body {
   font-style: normal;
   height: 100vh;
   text-align: center;
-  background-image: url("background4.png");
+  background-image: url("Images/background4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url("background5.png"); 
+    background-image: url("Images/background5.png"); 
     background-size: cover;
     padding: 20px;
   }
