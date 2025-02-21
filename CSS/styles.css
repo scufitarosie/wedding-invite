@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 
 body {
   margin: 0;
@@ -39,7 +40,7 @@ h1 {
   font-size: 3em;
   margin: 10px 0; 
   font-weight: bold;
-  font-family: "Allura", serif;
+  font-family: "Ms Madi", serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
