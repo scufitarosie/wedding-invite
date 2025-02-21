@@ -35,6 +35,13 @@ body {
   border-radius: 15px;
   overflow-y: auto; 
 }
+.container-title {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    gap: 5px; 
+    justify-content: center; 
+}
 
 h1 {
   font-size: 3em;
