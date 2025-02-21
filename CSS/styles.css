@@ -12,7 +12,7 @@ body {
   font-style: normal;
   height: 100vh;
   text-align: center;
-  background-image: url("../Images/background41.png");
+  background-image: url("../Images/background4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url("../Images/background51.png"); 
+    background-image: url("../Images/background5.png"); 
     background-size: cover;
     padding: 10px; 
   }
