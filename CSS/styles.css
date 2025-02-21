@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Ms+Madi&family=Allura&amily=Indie+Flower&family=Sacramento&display=swap');
 
 body {
   margin: 0;
@@ -71,7 +67,7 @@ h1 {
 }
 
 a {
-  font-family: 'Indie Flower', cursive; 
+  font-family: "Grape Nuts", serif;
   color: #333; 
   font-style: oblique; 
   text-decoration: none; 
